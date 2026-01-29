@@ -1,0 +1,5 @@
+Ye file Ansible ko batati hai ki kis server par kaam karna hai.
+
+[webservers]
+# Yahan apne Target-Server ka Private IP likhein
+172.31.21.248 ansible_user=ec2-user ansible_ssh_private_key_file=/root/.ssh/id_rsa
