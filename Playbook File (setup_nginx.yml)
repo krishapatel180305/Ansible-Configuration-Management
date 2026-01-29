@@ -1,4 +1,4 @@
-Ye aapka main automation code hai jo Nginx install aur start karega.
+This is your main automation code that will install and start Nginx.
 
 ---
 - name: Automated Web Server Deployment
