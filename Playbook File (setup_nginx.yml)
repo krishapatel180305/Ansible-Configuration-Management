@@ -1,0 +1,17 @@
+Ye aapka main automation code hai jo Nginx install aur start karega.
+
+---
+- name: Automated Web Server Deployment
+  hosts: webservers
+  become: yes
+  tasks:
+    - name: Install Nginx Package
+      dnf:
+        name: nginx
+        state: latest
+
+    - name: Start and Enable Nginx Service
+      service:
+        name: nginx
+        state: started
+        enabled: yes
